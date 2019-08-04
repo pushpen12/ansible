@@ -1,6 +1,7 @@
 node {  
     stage('Build') { 
-        // 
+    checkout scm
+    sh 'git submodule update --init'
     }
     stage('Test') { 
         // 
