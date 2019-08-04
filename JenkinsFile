@@ -1,12 +1,11 @@
 node {  
     stage('Build') { 
-    checkout scm
-    sh 'git submodule update --init'
+    echo test
     }
     stage('Test') { 
-        // 
+    echo test
     }
     stage('Deploy') { 
-        // 
+    echo test
     }
 }
