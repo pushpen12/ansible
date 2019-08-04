@@ -1,0 +1,8 @@
+---
+ - name: create web image
+   hosts: dockerhost
+   tasks:
+   - name: build image
+     docker_image:
+       path: /home/ec2-user/docker
+       name: webimage
